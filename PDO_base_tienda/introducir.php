@@ -17,7 +17,7 @@ if(isset($_POST["nombre"]) && isset($_POST["tamaño"])){
     $resultado->execute();  
 
     #Redirecciona a X pagina
-    header('Location: http://localhost/Tema_4/2021-22/ejercicios/PDO%20base_tienda/index2.php');
+    header('Location: https://agustinjaimez.informaticailiberis.com/PDO_base_tienda/index2.php');
 }
 $mbd = null;
 ?>

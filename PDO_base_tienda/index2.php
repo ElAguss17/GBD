@@ -89,7 +89,6 @@
              $mbd=null;
         ?>
         
-            <h2>esto es un test</h2>
     </div>
 </body>
 </html>

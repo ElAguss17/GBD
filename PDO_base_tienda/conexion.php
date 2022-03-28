@@ -1,7 +1,4 @@
 <?php
-#test sdfasdfaf
-#fasdfadf
-#dfadsfa
 
 $db ="mysql:host=localhost:3306;dbname=agustinjaimez_DB_tienda";
 $usuario ="agus_administrador";

@@ -40,7 +40,10 @@
         }
         
         ?>
-    </form>   
+    </form>
+    <br>
+		<p>usuario:contraseñas:tipo</p>
+		<p>pepe:12345:admin, loli:12345:profe, jose:12345:alumno, mimi:12345:alumno</p>
     </div>
 </body>
 </html>

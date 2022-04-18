@@ -6,11 +6,11 @@ if (isset($_REQUEST['boton'])) {
         
         case 'Volver':
             $_SESSION["fecha"]=date('l jS \of F Y h:i:s A');
-            header('Location: http://localhost/Tema_4/2021-22/ejercicios/cookies/index2.php');
+            header('Location: https://agustinjaimez.informaticailiberis.com/cookies/index2.php');
             break;
         case 'Salir':
             session_destroy();
-            header('Location: http://localhost/Tema_4/2021-22/ejercicios/cookies/index2.php');
+            header('Location: https://agustinjaimez.informaticailiberis.com/cookies/index2.php');
             break;
     }
 }

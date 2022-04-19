@@ -29,14 +29,16 @@
           print("<input type=\"password\" class=\"form-control\" name=\"contra\" value=\"".$_COOKIE["passw"]."\" required><br>");
           print("<label>Recordarme:</label><br>");
           print("<input name=\"recor\" value=\"y\" type=\"checkbox\" checked=\"true\"><br>");
-          print("<input type=\"submit\" class=\"btn btn-primary\"><br>");
+          print("<input type=\"submit\" class=\"btn btn-primary\" name=\"boton\" value=\"Iniciar\"><br><br>");
+          print("<input type=\"submit\" class=\"btn btn-primary\" name=\"boton\" value=\"Registrarse\"><br><br>");
         }else{
           print("<input type=\"text\" class=\"form-control\" name=\"usuario\" required><br>");
           print("<label>Contraseña:</label><br>");
           print("<input type=\"password\" class=\"form-control\" name=\"contra\" required><br>");
           print("<label>Recordarme:</label><br>");
           print("<input name=\"recor\" value=\"y\" type=\"checkbox\"><br>");
-          print("<input type=\"submit\" class=\"btn btn-primary\"><br>");
+          print("<input type=\"submit\" class=\"btn btn-primary\" name=\"boton\" value=\"Iniciar\"><br><br>");
+          print("<input type=\"submit\" class=\"btn btn-primary\" name=\"boton\" value=\"Registrarse\"><br><br>");
         }
         
         ?>

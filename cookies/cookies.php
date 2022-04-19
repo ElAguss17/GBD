@@ -54,7 +54,7 @@ if (isset($_REQUEST['boton'])) {
 
                 }else{
                     print("No existe ese usuario");
-                    print("<a class=\"btn btn-primary\" href=\"http://localhost/Tema_4/2021-22/ejercicios/cookies/index2.php\" role=\"button\">Volver</a>");
+                    print("<a class=\"btn btn-primary\" href=\"https://agustinjaimez.informaticailiberis.com/cookies/index2.php\" role=\"button\">Volver</a>");
                 }
             }
             echo("
@@ -73,7 +73,7 @@ if (isset($_REQUEST['boton'])) {
                 $usu->bindValue(":contra",$contra_coo,PDO::PARAM_STR);
                 $usu->execute();
                 print("Nuevo Usuario Registrado<br>");
-                print("<a href=\"http://localhost/Tema_4/2021-22/ejercicios/cookies/index2.php\">Volver</a>");
+                print("<a href=\"https://agustinjaimez.informaticailiberis.com/cookies/index2.php\">Volver</a>");
             }
             break;
     }

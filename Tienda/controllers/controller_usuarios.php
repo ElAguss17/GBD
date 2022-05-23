@@ -12,7 +12,10 @@ $curso= new Usuarios();
 		$curso->setApellido($_POST['apellido']);
 		$curso->setEmail($_POST['email']);
 		$curso->setPassword($_POST['password']);
+		print("hola");
 		//llama a la función insertar definida en el crud
+		$crud->insertar($curso);
+		print("hola");
 		if(!$crud->insertar($curso)){
 			print("NO se ha podido insertar");
 		};

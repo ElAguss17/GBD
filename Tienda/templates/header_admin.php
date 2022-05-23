@@ -41,14 +41,14 @@ if(!isset($_SESSION['Rool'])){
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <!-- Cambiar enlace por el de plex -->
-      <label><img class="Logo" src="http://localhost/Tema_4/2021-22/Tienda/img/logo.png"style="height:35px;width:35px;"></label>
+      <label><img class="Logo" src="https://agustinjaimez.informaticailiberis.com/Tienda/img/logo.png"style="height:35px;width:35px;"></label>
         <button class="navbar-toggler hidden-lg-up" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation"></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item active">
                <!-- Cambiar enlace por el de plex -->
-              <a class="nav-link" href="http://localhost/Tema_4/2021-22/Tienda/index2.php">Home <span class="visually-hidden">(current)</span></a>
+              <a class="nav-link" href="https://agustinjaimez.informaticailiberis.com/Tienda/index2.php">Home <span class="visually-hidden">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Ver carrito</a>
@@ -57,18 +57,18 @@ if(!isset($_SESSION['Rool'])){
               <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Editar Clases</a>
               <div class="dropdown-menu" aria-labelledby="dropdownId">
                 <!-- Cambiar enlace por el de plex -->
-                <a class="dropdown-item" href="http://localhost/Tema_4/2021-22/Tienda/archives/add_clase.php">Añadir</a>
+                <a class="dropdown-item" href="https://agustinjaimez.informaticailiberis.com/Tienda/archives/add_clase.php">Añadir</a>
                 <!-- Cambiar enlace por el de plex -->
-                <a class="dropdown-item" href="http://localhost/Tema_4/2021-22/Tienda/archives/modi_clase.php">Editar</a>
+                <a class="dropdown-item" href="https://agustinjaimez.informaticailiberis.com/Tienda/archives/modi_clase.php">Editar</a>
               </div>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Editar Usuarios</a>
               <div class="dropdown-menu" aria-labelledby="dropdownId">
                 <!-- Cambiar enlace Plex -->
-                <a class="dropdown-item" href="http://localhost/Tema_4/2021-22/Tienda/archives/add_usu.php">Añadir</a>
+                <a class="dropdown-item" href="https://agustinjaimez.informaticailiberis.com/Tienda/archives/add_usu.php">Añadir</a>
                 <!-- Cambiar enlace por el de plex -->
-                <a class="dropdown-item" href="http://localhost/Tema_4/2021-22/Tienda/archives/modi_usu.php">Editar</a>
+                <a class="dropdown-item" href="https://agustinjaimez.informaticailiberis.com/Tienda/archives/modi_usu.php">Editar</a>
               </div>
             </li>
           </ul>

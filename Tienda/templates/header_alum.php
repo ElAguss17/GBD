@@ -19,7 +19,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <!-- Cambiar url logo -->
-    <label><img class="Logo" src="http://localhost/Tema_4/2021-22/Tienda/img/logo.png"style="height:35px;width:35px;"></label>
+    <label><img class="Logo" src="https://agustinjaimez.informaticailiberis.com/Tienda/img/logo.png"style="height:35px;width:35px;"></label>
         <button class="navbar-toggler hidden-lg-up" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation"></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">

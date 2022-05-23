@@ -13,7 +13,9 @@ $curso= new Usuarios();
 		$curso->setEmail($_POST['email']);
 		$curso->setPassword($_POST['password']);
 		//llama a la función insertar definida en el crud
-		$crud->insertar($curso);
+		if(!$crud->insertar($curso)){
+			print("NO se ha podido insertar");
+		};
 		header('Location: https://agustinjaimez.informaticailiberis.com/Tienda/archives/add_usu.php');
 	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el curso
 	}elseif(isset($_POST['actualizar'])){

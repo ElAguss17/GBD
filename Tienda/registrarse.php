@@ -3,7 +3,7 @@ include_once("templates/header.php");
 ?>
 <div class="d-flex justify-content-center" id="registrarse">
 <br>
-<form action='controllers/controller_cursos.php' method='post'>
+<form action='controllers/controller_usuarios.php' method='post'>
 <br>
 	<table>
 		<tr>
@@ -25,6 +25,9 @@ include_once("templates/header.php");
         <tr>
 			<td>Repetir Contraseña:</td>
 			<td><input type='text' name='passw2'required></td>
+		</tr>
+		<tr>
+			<td><input type='hiden' name='rool' value="alumno"></td>
 		</tr>
 		<input type='hidden' name='insertar' value='insertar'>
 	</table>

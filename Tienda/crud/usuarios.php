@@ -32,6 +32,22 @@ if(basename($_SERVER['PHP_SELF']) == "index22.php"){
  
 		}
  
+		public function insertar2($curso){
+			$db=Db::conectar();
+			$insert=$db->prepare('INSERT INTO usuarios values(default,:nombre,:apellido,:email,:pasword,:rool)');
+            $insert->bindValue(':nombre',$curso->getNombre());
+			$insert->bindValue(':apellido',$curso->getApellido());
+			$insert->bindValue(':email',$curso->getEmail());
+			$insert->bindValue(':pasword',$curso->getPassword());
+			$insert->bindValue(':rool',$curso->getPassword());
+			if($insert->execute()){
+				return True;
+			}else{
+				return False;
+			}
+ 
+		}
+ 
 		// método para mostrar todos los cursos
 		public function mostrar(){
 			$db=Db::conectar();

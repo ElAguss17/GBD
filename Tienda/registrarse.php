@@ -26,7 +26,6 @@ include_once("templates/header.php");
 			<td>Repetir Contraseña:</td>
 			<td><input type='text' name='passw2'required></td>
 		</tr>
-		<input type='hidden' name='rool' value="alumno">
 		<input type='hidden' name='insertar' value='insertar'>
 	</table>
 	<div class="d-flex justify-content-center" style="margin-bottom:10px" ><input class="btn btn-primary" type='submit' value='Guardar'></div>

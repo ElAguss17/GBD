@@ -56,7 +56,7 @@ if (session_status() !== 2) {
                  unset($_SESSION["Nombre"]);
                  unset($_SESSION["Rool"]);
                  #$session_destroy();
-                 header('Location: http://localhost/Tema_4/2021-22/Tienda/index2.php');      
+                 header('Location: https://agustinjaimez.informaticailiberis.com/Tienda/index2.php');      
                }
              }
             ?></label>

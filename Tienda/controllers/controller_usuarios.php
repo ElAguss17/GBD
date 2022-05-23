@@ -15,7 +15,7 @@ $curso= new Usuarios();
         $curso->setRool($_POST['rool']);
 		//llama a la función insertar definida en el crud
 		$crud->insertar($curso);
-		header('Location: http://localhost/Tema_4/2021-22/Tienda/archives/add_usu.php');
+		header('Location: https://agustinjaimez.informaticailiberis.com/Tienda/archives/add_usu.php');
 	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el curso
 	}elseif(isset($_POST['actualizar'])){
 		$curso->setIdUsuario(($_POST['idU']));
@@ -25,12 +25,12 @@ $curso= new Usuarios();
 		$curso->setPassword($_POST['password']);
         $curso->setRool($_POST['rool']);
 		$crud->actualizar($curso);
-		header('Location: http://localhost/Tema_4/2021-22/Tienda/archives/modi_usu.php');
+		header('https://agustinjaimez.informaticailiberis.com/Tienda/archives/modi_usu.php');
 	// si la variable accion enviada por GET es == 'e' llama al crud y elimina un curso
 	}elseif ($_GET['accion']=='e') {
 		print($_GET['idU']);
 		$crud->eliminar($_GET['idU']);
-		header('Location: http://localhost/Tema_4/2021-22/Tienda/archives/modi_usu.php');	
+		header('Location: https://agustinjaimez.informaticailiberis.com/Tienda/archives/modi_usu.php');	
 	}	
 	// si la variable accion enviada por GET es == 'a', envía a la página actualizar.php 
 	elseif($_GET['accion']=='a'){

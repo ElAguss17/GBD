@@ -1,8 +1,8 @@
 <?php
 	class  Db{
-        private static $db ="mysql:host=localhost;dbname=agustinjaimez_True_tienda";
-        private static $usuario ="root";
-        private static $contraseña="";
+        private static $db ="mysql:host=localhost:3306;dbname=agustinjaimez_True_tienda";
+		private static $usuario ="agus_tienda_admin";
+		private static $contraseña="Cxb7n3!2";
 		private static $conexion=NULL;
 		private function __construct (){}
  

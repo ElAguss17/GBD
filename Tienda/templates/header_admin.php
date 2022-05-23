@@ -5,10 +5,10 @@ if (session_status() !== 2) {
     }
 /* comprobamos q el Rool es Administrador para q el header del Admin no pueda salir en un usu Profesor */
 if(!isset($_SESSION['Rool'])){
-  header('Location: http://localhost/Tema_4/2021-22/Tienda/index2.php');
+  header('Location: https://agustinjaimez.informaticailiberis.com/Tienda/index2.php');
 }else{
   if($_SESSION['Rool']!='administrador'){
-    header('Location: http://localhost/Tema_4/2021-22/Tienda/index2.php');
+    header('Location: https://agustinjaimez.informaticailiberis.com/Tienda/index2.php');
     }
 }
 
@@ -81,7 +81,7 @@ if(!isset($_SESSION['Rool'])){
                  unset($_SESSION["Rool"]);
                  #$session_destroy();
                  /*Cambiar enlace por el de plex */
-                 header('Location: http://localhost/Tema_4/2021-22/Tienda/index2.php');      
+                 header('Location: https://agustinjaimez.informaticailiberis.com/Tienda/index2.php');      
                }
              }
             ?></label>

@@ -22,15 +22,15 @@ if(isset($_POST["email"]) && $_POST["password"]){
                 /* if(isset($_POST["recordarme"])){
                 
                 } */
-                header('Location: http://localhost/Tema_4/2021-22/Tienda/index2.php');
+                header('Location: https://agustinjaimez.informaticailiberis.com/Tienda/index2.php');
             }
         }
     }else{
         print("El usuario o la contraseña es incorrecto");
-        print("<a href=\"http://localhost/Tema_4/2021-22/Tienda/index2.php\">Volver</a>");
+        print("<a href=\"https://agustinjaimez.informaticailiberis.com/Tienda/index2.php\">Volver</a>");
     }
 }else{
     print("Introduzca Correo y Contraseña");
-    print("<br><a href=\"http://localhost/Tema_4/2021-22/Tienda/index2.php\">Volver</a>");
+    print("<br><a href=\"https://agustinjaimez.informaticailiberis.com/Tienda/index2.php\">Volver</a>");
 }
 ?>

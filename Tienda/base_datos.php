@@ -58,9 +58,9 @@ try{
           ON DELETE no action
           ON UPDATE cascade);
       
-    insert into `agustinjaimez_True_tienda`.`usuarios` values (default,'jorge','fernandez','aaa@gmail.com','a','alumno'),
-    (default,'pepe','fernandez','abb@gmail.com','a','profesor'),
-    (default,'chill','fernandez','abc@gmail.com','a','administrador');
+    insert into `agustinjaimez_True_tienda`.`usuarios` values (default,'jorge-Al','fernandez','aaa@gmail.com','a','alumno'),
+    (default,'pepe-P','fernandez','abb@gmail.com','a','profesor'),
+    (default,'chill-AS','fernandez','abc@gmail.com','a','administrador');
 
     insert into `agustinjaimez_True_tienda`.`profes_` values (1,'mates'),(2,'mates'),(3,'mates');
         

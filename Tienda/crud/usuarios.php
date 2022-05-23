@@ -3,13 +3,12 @@
 // incluye la clase Db
 if(basename($_SERVER['PHP_SELF']) == "index22.php"){
 	include_once('class/conextion.php');
-}elseif(basename($_SERVER['PHP_SELF']) == "test.php"){
+}elseif(basename($_SERVER['PHP_SELF']) == "registrarse.php"){
 	include_once('class/conextion.php');
 }else{
 	include_once('../class/conextion.php');
 }
 
- 
 	class CrudUsuarios{
 		// constructor de la clase
 		public function __construct(){}

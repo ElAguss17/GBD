@@ -12,7 +12,6 @@ $curso= new Usuarios();
 		$curso->setApellido($_POST['apellido']);
 		$curso->setEmail($_POST['email']);
 		$curso->setPassword($_POST['password']);
-        $curso->setRool($_POST['rool']);
 		//llama a la función insertar definida en el crud
 		$crud->insertar($curso);
 		header('Location: https://agustinjaimez.informaticailiberis.com/Tienda/archives/add_usu.php');

@@ -4,7 +4,9 @@ if (isset($_REQUEST['boton'])) {
     switch ($valor) { 
         
         case 'Iniciar':
-            session_start();
+            if (session_status() !== 2) {
+                session_start();
+            }
             echo ("<!DOCTYPE html>
             <html lang=\"en\">
             <head>

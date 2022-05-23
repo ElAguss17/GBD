@@ -1,0 +1,58 @@
+
+#session {
+    margin-right: 15%;
+    margin-left: 58%;
+    margin-top: 3%;
+    padding-top: 10%;
+    width: 40%;
+    height: 40%;
+    border: 5px solid #0d6efd;
+    background-color: white;
+    position: absolute;  
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    visibility:hidden;
+}
+#sessionhijo{
+    width:90%;
+    height:90%;
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+
+#close { 
+margin-top: 1em; 
+}
+#close:before {
+content: "✖";
+cursor: pointer;
+}
+
+#registrarse{
+    margin-top:15%;
+    margin-bottom: 40%;
+}
+#registrarse table{
+    border-collapse: separate;
+    border-spacing: 3px 15px;
+}
+#registrarse form{
+    border: 5px solid #0d6efd;
+    background-color: white;
+    position: absolute;  
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#Logo{
+    width: 15px;
+    height: 15px;
+
+}

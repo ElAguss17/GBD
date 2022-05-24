@@ -7,16 +7,17 @@ include_once("../templates/header_admin.php");
     include_once("../class/usuarios.php");
     $crud = new CrudUsuarios();
     $curso = new Usuarios();
+	print_r($curso=$crud->obtenerUsuario($_GET['id']));
 	//busca el libro utilizando el id, que es enviado por GET desde la vista mostrar.php
 	$curso=$crud->obtenerUsuario($_GET['id']);
 ?>
 <br><br><br>
-<div class="d-flex justify-content-center" id="registrarse">
+<div class="d-flex justify-content-center" id="actualizar">
 <br>
-<form action='../controllers/controller_cursos.php' method='post'>
+<form action='../controllers/controller_usuarios.php' method='post'>
 	<table>
 		<tr>
-			<input type='hidden' name='id' value='<?php echo $curso->getIdUsuario()?>'>
+			<input type='hidden' name='idU' value='<?php echo $curso->getIdUsuario()?>'>
 			<td>Nombre:</td>
 			<td> <input type='text' name='nombre'required value='<?php echo $curso->getNombre()?>'></td>
 		</tr>

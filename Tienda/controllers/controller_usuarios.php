@@ -14,15 +14,16 @@ $curso= new Usuarios();
 		$curso->setPassword($_POST['passw']);
 		//llama a la función insertar definida en el crud
 		if($crud->correo($curso->getEmail())){
-			print("si");
-			break;
-		}
-		if(!$crud->insertar($curso)){
-			print("NO se ha podido insertar");
+			print("El Email ya esta registrado ");
+        	print("<a href=\"https://agustinjaimez.informaticailiberis.com/Tienda/index2.php\">Volver</a>");
 		}else{
-			print("bien");
+			if(!$crud->insertar($curso)){
+				print("NO se ha podido insertar");
+			}else{
+				print("bien");
+			}
+			header('Location: https://agustinjaimez.informaticailiberis.com/Tienda/index2.php');
 		}
-		header('Location: https://agustinjaimez.informaticailiberis.com/Tienda/index2.php');
 	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el curso
 	}elseif (isset($_POST['insertar2'])) {
 		$curso->setNombre($_POST['nombre']);

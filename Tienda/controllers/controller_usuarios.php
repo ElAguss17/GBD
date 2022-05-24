@@ -48,7 +48,7 @@ $curso= new Usuarios();
 		$curso->setPassword($_POST['password']);
         $curso->setRool($_POST['rool']);
 		if($crud->actualizar($curso)){
-					header('https://agustinjaimez.informaticailiberis.com/Tienda/archives/modi_usu.php');
+			header('Location: https://agustinjaimez.informaticailiberis.com/Tienda/archives/modi_usu.php');
 		}else{
 			print("No se ha actualizado");
 		}

@@ -105,6 +105,7 @@ if(basename($_SERVER['PHP_SELF']) == "index22.php"){
 			$actualizar->bindValue(':pasword',$curso->getPassword());
             $actualizar->bindValue(':rool',$curso->getRool());
 			$actualizar->execute();
+			return True;
 		}
 
 		public function check($usu,$passw){

@@ -6,10 +6,9 @@ include_once("../templates/header_admin.php");
     include_once("../crud/usuarios.php");
     include_once("../class/usuarios.php");
     $crud = new CrudUsuarios();
-    $curso = new Usuarios();
-	print_r($curso=$crud->obtenerUsuario($_GET['id']));
+    $curso = new Usuarios();	
 	//busca el libro utilizando el id, que es enviado por GET desde la vista mostrar.php
-	$curso=$crud->obtenerUsuario($_GET['id']);
+	$curso=$crud->obtenerUsuario($_GET['idU']);
 ?>
 <br><br><br>
 <div class="d-flex justify-content-center" id="actualizar">
@@ -23,19 +22,19 @@ include_once("../templates/header_admin.php");
 		</tr>
 		<tr>
 			<td>Apellido:</td>
-			<td><input type='text' name='descripcion'required value='<?php echo $curso->getApellido()?>' ></td>
+			<td><input type='text' name='apellido'required value='<?php echo $curso->getApellido()?>' ></td>
 		</tr>
 		<tr>
 			<td>Email</td>
-			<td><input type='email' name='tamaño'required value='<?php echo $curso->getEmail()?>'></td>
+			<td><input type='email' name='email'required value='<?php echo $curso->getEmail()?>'></td>
 		</tr>
 		<tr>
 			<td>Contraseña:</td>
-			<td><input type='text' name='precio'required value='<?php echo $curso->getPassword() ?>'></td>
+			<td><input type='text' name='password'required value='<?php echo $curso->getPassword() ?>'></td>
 		</tr>
         <tr>
 			<td>Rool</td>
-			<td><input type='text' name='profesor'required value='<?php echo $curso->getRool() ?>'></td>
+			<td><input type='text' name='rool'required value='<?php echo $curso->getRool() ?>'></td>
 		</tr>
 		<input type='hidden' name='actualizar' value'actualizar'>
 	</table>

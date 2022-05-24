@@ -11,7 +11,7 @@ include_once("../templates/header_admin.php");
 	$curso=$crud->obtenerUsuario($_GET['idU']);
 ?>
 <br><br><br>
-<div class="d-flex justify-content-center" id="actualizar">
+<div class="d-flex justify-content-center" id="registrarse">
 <br>
 <form action='../controllers/controller_usuarios.php' method='post'>
 	<table>

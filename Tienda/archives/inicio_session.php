@@ -13,6 +13,8 @@ if(isset($_POST["email"]) && $_POST["password"]){
     print("uno");
     $u=$_POST["email"];
     $p=$_POST["password"];
+    print($u);
+    print($p);
     if($crudUs->check($u,$p)){
         if(isset($_POST["recordarme"])=="y"){
             setcookie("email",$u,strtotime( '+30 days'),"/");

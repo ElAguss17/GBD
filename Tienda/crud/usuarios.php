@@ -119,5 +119,17 @@ if(basename($_SERVER['PHP_SELF']) == "index22.php"){
 				return False;
 			}
 		}
+		public function correo($usu){
+			$db=Db::conectar();
+			$comprobar=$db->prepare('select email from usuarios where email like :email');
+			$comprobar->bindValue(":email",$usu,PDO::PARAM_STR);
+			$comprobar->execute();
+			if($comprobar->rowCount()==1){
+				return True;
+			}else{
+				return False;
+			}
+		}
+
 	}
 ?>

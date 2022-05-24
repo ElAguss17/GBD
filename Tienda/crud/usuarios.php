@@ -73,7 +73,11 @@ if(basename($_SERVER['PHP_SELF']) == "index22.php"){
 			$db=Db::conectar();
 			$eliminar=$db->prepare('DELETE FROM usuarios WHERE idUsuario=:id');
 			$eliminar->bindValue(':id',$id);
-			$eliminar->execute();
+			if($eliminar->execute()){
+				return True;
+			}else{
+				return False;
+			}
 		}
  
 		// método para buscar un curso, recibe como parámetro el id del curso
@@ -104,8 +108,11 @@ if(basename($_SERVER['PHP_SELF']) == "index22.php"){
 			$actualizar->bindValue(':email',$curso->getEmail());
 			$actualizar->bindValue(':pasword',$curso->getPassword());
             $actualizar->bindValue(':rool',$curso->getRool());
-			$actualizar->execute();
-			return True;
+			if($actualizar->execute()){
+				return True;
+			}else{
+				return False;
+			}
 		}
 
 		public function check($usu,$passw){

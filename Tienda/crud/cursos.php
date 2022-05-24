@@ -21,7 +21,12 @@ if(basename($_SERVER['PHP_SELF']) == "index22.php"){
 			$insert->bindValue(':tama',$curso->getTamañoC(),PDO::PARAM_INT);
 			$insert->bindValue(':precio',$curso->getPrecio(),PDO::PARAM_INT);
             $insert->bindValue(':id_prof',$curso->getId_prof());
-			$insert->execute();
+			
+			if($insert->execute()){
+				return True;
+			}else{
+				return False;
+			}
  
 		}
  
@@ -50,7 +55,12 @@ if(basename($_SERVER['PHP_SELF']) == "index22.php"){
 			$db=Db::conectar();
 			$eliminar=$db->prepare('DELETE FROM cursos WHERE idCurso=:id');
 			$eliminar->bindValue(':id',$id);
-			$eliminar->execute();
+			if($eliminar->execute()){
+				return True;
+			}else{
+				return False;
+			}
+ 
 		}
  
 		// método para buscar un curso, recibe como parámetro el id del curso
@@ -81,7 +91,11 @@ if(basename($_SERVER['PHP_SELF']) == "index22.php"){
 			$actualizar->bindValue(':tamano',$curso->getTamañoC());
 			$actualizar->bindValue(':precio',$curso->getPrecio());
             $actualizar->bindValue(':id_prof',$curso->getId_prof());
-			$actualizar->execute();
+			if($actualizar->execute()){
+				return True;
+			}else{
+				return False;
+			}
 		}
 
 		public function mostrarP($a){

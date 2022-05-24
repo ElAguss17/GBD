@@ -50,7 +50,7 @@ if(isset($_SESSION["Rool"]) && isset($_SESSION["Nombre"])){
         <tr>
 			<td><input type='hidden' name='profesor'required value='<?php echo $curso->getId_prof() ?>'></td>
 		</tr>
-		<input type='hidden' name='actualizar' value'actualizar'>
+		<input type='hidden' name='actualizar' value='actualizar'>
 	</table>
 	<input type='submit' value='Guardar'>
 </form>

@@ -8,6 +8,7 @@ $curso= new Usuarios();
  
 	// si el elemento insertar no viene nulo llama al crud e inserta un curso
 	if (isset($_POST['insertar'])) {
+		print("uno");
 		$curso->setNombre($_POST['nombre']);
 		$curso->setApellido($_POST['apellido']);
 		$curso->setEmail($_POST['email']);
@@ -26,6 +27,7 @@ $curso= new Usuarios();
 		}
 	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el curso
 	}elseif (isset($_POST['insertar2'])) {
+		print("3");
 		$curso->setNombre($_POST['nombre']);
 		$curso->setApellido($_POST['apellido']);
 		$curso->setEmail($_POST['email']);
@@ -38,6 +40,7 @@ $curso= new Usuarios();
 		header('Location: https://agustinjaimez.informaticailiberis.com/Tienda/archives/add_usu.php');
 	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el curso
 	}elseif(isset($_POST['actualizar'])){
+		print("4");
 		$curso->setIdUsuario(($_POST['idU']));
 		$curso->setNombre($_POST['nombre']);
 		$curso->setApellido($_POST['apellido']);

@@ -47,9 +47,11 @@ $curso= new Usuarios();
 		$curso->setEmail($_POST['email']);
 		$curso->setPassword($_POST['password']);
         $curso->setRool($_POST['rool']);
-		$crud->actualizar($curso);
-		header('www.google.com');
-		#header('https://agustinjaimez.informaticailiberis.com/Tienda/archives/modi_usu.php');
+		if($crud->actualizar($curso)){
+					header('https://agustinjaimez.informaticailiberis.com/Tienda/archives/modi_usu.php');
+		}else{
+			print("No se ha actualizado");
+		}
 	// si la variable accion enviada por GET es == 'e' llama al crud y elimina un curso
 	}elseif ($_GET['accion']=='e') {
 		print($_GET['idU']);

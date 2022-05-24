@@ -36,7 +36,7 @@ include_once("../templates/header_admin.php");
 			<td>Rool</td>
 			<td><input type='text' name='rool'required value='<?php echo $curso->getRool() ?>'></td>
 		</tr>
-		<input type='hidden' name='actualizar' value='actualizar'>
+		<input type='hidden' name='actualizar' value'actualizar'>
 	</table>
 	<input type='submit' value='Guardar'>
 </form>

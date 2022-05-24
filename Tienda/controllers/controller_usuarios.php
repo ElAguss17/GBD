@@ -13,6 +13,7 @@ $curso= new Usuarios();
 		$curso->setEmail($_POST['email']);
 		$curso->setPassword($_POST['password']);
 		print("hola");
+		print($curso->getNombre());
 		//llama a la función insertar definida en el crud
 		$crud->insertar($curso);
 		print("hola");
